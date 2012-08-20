@@ -9,7 +9,7 @@ gem 'rails', '3.2.8'
 gem 'mobylette'
 gem 'jquery_mobile_rails'
 gem 'pg'
-
+gem 'thin'
 
 
 
