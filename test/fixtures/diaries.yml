@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stress: 1
+  mucous: 1
+  sneeze: false
+  minutes_of_exercise: 1
+  fruit: false
+  alcohol: false
+  coffee: false
+  tea: false
+  food_details: MyString
+
+two:
+  stress: 1
+  mucous: 1
+  sneeze: false
+  minutes_of_exercise: 1
+  fruit: false
+  alcohol: false
+  coffee: false
+  tea: false
+  food_details: MyString

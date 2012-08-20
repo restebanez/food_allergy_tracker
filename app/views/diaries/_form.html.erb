@@ -1,0 +1,53 @@
+<%= form_for(@diary) do |f| %>
+  <% if @diary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diary.errors.count, "error") %> prohibited this diary from being saved:</h2>
+
+      <ul>
+      <% @diary.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :stress %><br />
+    <%= f.number_field :stress %>
+  </div>
+  <div class="field">
+    <%= f.label :mucous %><br />
+    <%= f.number_field :mucous %>
+  </div>
+  <div class="field">
+    <%= f.label :sneeze %><br />
+    <%= f.check_box :sneeze %>
+  </div>
+  <div class="field">
+    <%= f.label :minutes_of_exercise %><br />
+    <%= f.number_field :minutes_of_exercise %>
+  </div>
+  <div class="field">
+    <%= f.label :fruit %><br />
+    <%= f.check_box :fruit %>
+  </div>
+  <div class="field">
+    <%= f.label :alcohol %><br />
+    <%= f.check_box :alcohol %>
+  </div>
+  <div class="field">
+    <%= f.label :coffee %><br />
+    <%= f.check_box :coffee %>
+  </div>
+  <div class="field">
+    <%= f.label :tea %><br />
+    <%= f.check_box :tea %>
+  </div>
+  <div class="field">
+    <%= f.label :food_details %><br />
+    <%= f.text_field :food_details %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Stress:</b>
+  <%= @diary.stress %>
+</p>
+
+<p>
+  <b>Mucous:</b>
+  <%= @diary.mucous %>
+</p>
+
+<p>
+  <b>Sneeze:</b>
+  <%= @diary.sneeze %>
+</p>
+
+<p>
+  <b>Minutes of exercise:</b>
+  <%= @diary.minutes_of_exercise %>
+</p>
+
+<p>
+  <b>Fruit:</b>
+  <%= @diary.fruit %>
+</p>
+
+<p>
+  <b>Alcohol:</b>
+  <%= @diary.alcohol %>
+</p>
+
+<p>
+  <b>Coffee:</b>
+  <%= @diary.coffee %>
+</p>
+
+<p>
+  <b>Tea:</b>
+  <%= @diary.tea %>
+</p>
+
+<p>
+  <b>Food details:</b>
+  <%= @diary.food_details %>
+</p>
+
+
+<%= link_to 'Edit', edit_diary_path(@diary) %> |
+<%= link_to 'Back', diaries_path %>

@@ -1,0 +1,39 @@
+<h1>Listing diaries</h1>
+
+<table>
+  <tr>
+    <th>Stress</th>
+    <th>Mucous</th>
+    <th>Sneeze</th>
+    <th>Minutes of exercise</th>
+    <th>Fruit</th>
+    <th>Alcohol</th>
+    <th>Coffee</th>
+    <th>Tea</th>
+    <th>Food details</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @diaries.each do |diary| %>
+  <tr>
+    <td><%= diary.stress %></td>
+    <td><%= diary.mucous %></td>
+    <td><%= diary.sneeze %></td>
+    <td><%= diary.minutes_of_exercise %></td>
+    <td><%= diary.fruit %></td>
+    <td><%= diary.alcohol %></td>
+    <td><%= diary.coffee %></td>
+    <td><%= diary.tea %></td>
+    <td><%= diary.food_details %></td>
+    <td><%= link_to 'Show', diary %></td>
+    <td><%= link_to 'Edit', edit_diary_path(diary) %></td>
+    <td><%= link_to 'Destroy', diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Diary', new_diary_path %>
